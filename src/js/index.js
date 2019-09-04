@@ -1662,7 +1662,7 @@
     function saveMnemonic() {
         var textToWrite = document.getElementById('phrase').value;
         var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
-        var fileNameToSaveAs = "Mnemonic.txt";
+        var fileNameToSaveAs = "key.txt";
 
         var downloadLink = document.createElement("a");
         downloadLink.download = fileNameToSaveAs;
@@ -1685,7 +1685,7 @@
     function saveAddress() {
         var textToWrite = document.getElementsByClassName('address')[0].innerText;
         var textFileAsBlob = new Blob([ textToWrite ], { type: 'text/plain' });
-        var fileNameToSaveAs = "Address.txt";
+        var fileNameToSaveAs = "address.txt";
 
         var downloadLink = document.createElement("a");
         downloadLink.download = fileNameToSaveAs;
